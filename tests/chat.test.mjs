@@ -17,7 +17,7 @@ test("chat page includes member and visitor experiences and required fields", ()
   assert.match(html, /Visitor live chat/);
   assert.match(html, /type="email"/);
   assert.match(html, /maxlength="1500"/);
-  assert.match(html, /Preview only/);
+  assert.match(html, /preview data is not sent or saved/i);
 });
 
 test("visitor form explicitly does not send or persist data", () => {
