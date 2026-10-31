@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f6f1"><title>Chat | OM Krishna Group</title>
+<meta name="description" content="Contact OM Krishna Group or learn about secure member chat.">
+<link rel="stylesheet" href="../shared/styles/global.css">
+<link rel="stylesheet" href="../shared/styles/chat.css">
+</head>
+<body class="chat-page">
+<header class="site-header"><a class="brand" href="../../index.html"><span class="brand-mark">OK</span><span>OM KRISHNA <small>GROUP</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu ☰</button><nav id="nav" class="primary-nav"><a href="../../index.html">Group Home</a><a href="om.html">Om Yadav</a><a href="krishna.html">Krishna Yadav</a><a class="active nav-cta" href="chat.html">Chat & Contact</a></nav></header>
+<main class="chat-shell">
+<section class="chat-intro"><p class="eyebrow">OM KRISHNA CONNECT</p><h1>Stay connected,<br><span>with care.</span></h1><p>Choose a private member conversation or contact the family-managed website team. Private chat will only be enabled after secure account registration and backend setup.</p><div class="chat-safety"><span aria-hidden="true">🔒</span><span><strong>Privacy first</strong><br>Do not share passwords, home addresses, school details or sensitive personal information in messages.</span></div></section>
+<section class="chat-panels" aria-label="Chat options">
+<article class="chat-panel"><div class="panel-icon" aria-hidden="true">✉</div><p class="eyebrow">MEMBERS</p><h2>Family private chat</h2><p>Registered members will be able to message approved contacts and family groups. Access will be checked by the server, not just by this page.</p><ul><li>Account registration and email verification</li><li>Private one-to-one and group conversations</li><li>Block/report and family moderation controls</li></ul><a class="button button-primary" href="register.html">Register for member access</a><p class="small-note">Registration is a planned connection until authentication is configured.</p></article>
+<article class="chat-panel visitor-panel"><div class="panel-icon" aria-hidden="true">☏</div><p class="eyebrow">VISITORS</p><h2>Visitor live chat</h2><p>Send a contact request to the family-managed team. This preview does not send messages until a secure server/email provider is connected.</p>
+<form id="visitor-chat-form" class="visitor-chat-form">
+<label for="visitor-name">Your name</label><input id="visitor-name" name="name" maxlength="80" autocomplete="name" required>
+<label for="visitor-email">Email address</label><input id="visitor-email" name="email" type="email" maxlength="254" autocomplete="email" required>
+<label for="visitor-topic">What can we help with?</label><select id="visitor-topic" name="topic" required><option value="">Choose a topic</option><option>Website question</option><option>Om Yadav profile</option><option>Krishna Yadav profile</option><option>Membership / account help</option><option>Other</option></select>
+<label for="visitor-message">Message</label><textarea id="visitor-message" name="message" maxlength="1500" rows="4" required placeholder="Please avoid sharing private or sensitive details."></textarea>
+<button class="button button-primary" type="submit">Preview contact request</button>
+<p id="visitor-chat-notice" class="form-notice" role="status" aria-live="polite"></p>
+</form></article>
+</section>
+<section class="chat-status"><h2>What happens next?</h2><ol><li>Register with your email and verify it.</li><li>Once the secure service is configured, sign in to access member chat.</li><li>Visitor requests will be routed through a protected service, with spam controls and clear privacy notices.</li></ol><p class="small-note">Preview build: no chat message or contact form data is sent or saved. Do not enter real private information here.</p></section>
+</main>
+<footer class="site-footer"><div class="shell footer-main"><a class="brand brand-footer" href="../../index.html"><span class="brand-mark">OK</span><span>OM KRISHNA <small>GROUP</small></span></a><p>A family-managed home for two individual journeys.</p><nav><a href="om.html">Om Yadav</a><a href="krishna.html">Krishna Yadav</a><a href="chat.html">Chat & Contact</a></nav></div><div class="shell footer-bottom"><span>© <span id="year">2026</span> OM Krishna Group</span><span>Privacy-conscious by design</span></div></footer>
+<script src="../shared/scripts/site.js"></script><script src="../shared/scripts/chat.js"></script>
+</body></html>
