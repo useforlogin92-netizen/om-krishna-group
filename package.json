@@ -1,0 +1,12 @@
+{
+  "name": "om-krishna-group-website",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Family-managed OM Krishna Group website prototype",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
