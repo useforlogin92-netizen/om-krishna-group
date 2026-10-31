@@ -41,3 +41,17 @@
 
 ## Current limitations
 Activity posts and media previews only exist in the current browser session; they do not persist to a database or upload to a server. The contact form is also a front-end preview only.
+
+## Draft database schema added on 2026-10-31
+
+A review-only SQL draft is available at `supabase/drafts/2026-10-31_activity_schema.sql`. It defines profile, activity, media metadata and approval-history tables with initial Row Level Security (RLS) policies. **It has not been executed against any database.**
+
+Before using it:
+1. Confirm the Supabase project and its current schema.
+2. Review and harden approval permissions and column-level update grants. In particular, users must not be able to change their own role, guardian link, or approval fields.
+3. Configure a private Storage bucket with tested upload/download/delete policies.
+4. Test anonymous, child, guardian and admin access using separate accounts.
+5. Only then connect the website using a publishable client key; never place a service-role/secret key in browser code.
+
+The current website still uses local-only activity previews. This SQL file does not enable live posting, account creation, media uploads or public publishing by itself.
+
