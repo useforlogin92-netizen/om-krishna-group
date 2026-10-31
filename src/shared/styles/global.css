@@ -8,3 +8,64 @@
 
 /* Reserved photo slots; real uploads require authenticated admin + private storage */
 .profile-photo-slot{display:flex;align-items:center;gap:22px;padding:20px 22px;margin:0 0 36px;border:1px dashed #c9cdd4;border-radius:20px;background:#ffffffa6}.profile-photo-placeholder{width:92px;height:92px;flex:0 0 92px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(145deg,#1b3150,#101b30);color:#e6c98c;font:800 24px Manrope;letter-spacing:-.06em;box-shadow:0 8px 22px #17233a18}.krishna-photo-placeholder{background:linear-gradient(145deg,#e6d3a9,#c5a979);color:#17233a}.profile-photo-slot h3{font:700 20px Manrope;color:#17233a;margin:0 0 5px}.profile-photo-slot p:not(.eyebrow){font-size:12px;line-height:1.7;color:#667085;margin:0 0 8px}.profile-photo-slot .eyebrow{font-size:9px;margin:0 0 5px}.photo-status{display:inline-block;border-radius:20px;background:#f0eee8;color:#786341;padding:5px 9px;font-size:10px;font-weight:700}@media(max-width:480px){.profile-photo-slot{align-items:flex-start;gap:14px;padding:16px}.profile-photo-placeholder{width:70px;height:70px;flex-basis:70px;font-size:20px}}
+
+
+/* October 2026 visual polish: clearer hierarchy, accessible focus and responsive cards */
+:root{--gold:#c9a86b;--cream:#f7f5ef;--line:#e4e7ec;--shadow:0 18px 48px #101d3612}
+:focus-visible{outline:3px solid #b88b3b;outline-offset:4px}
+::selection{background:#e8d6ad;color:#101d36}
+.site-header{background:#ffffffed;backdrop-filter:blur(12px)}
+.brand{letter-spacing:.08em}
+.brand-mark{box-shadow:0 5px 14px #101d361c}
+.primary-nav{font-size:12px;gap:19px}
+.primary-nav a{transition:color .18s ease}
+.group-hero{background:linear-gradient(180deg,#fbfaf7 0%,#f5f2e9 100%);overflow:hidden}
+.group-hero-inner{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:56px;padding-top:70px;padding-bottom:74px}
+.group-hero-copy h1{font:800 clamp(42px,5.4vw,68px)/1.08 Manrope;letter-spacing:-.055em;color:var(--navy);margin:0 0 22px}
+.group-hero-copy h1 span{color:#9b7b45}
+.group-hero-copy .lead{max-width:530px;font-size:16px}
+.group-hero-copy .button{margin-top:13px;box-shadow:0 8px 18px #101d3618}
+.group-hero-art{min-height:350px;position:relative;overflow:hidden;border-radius:30px;background:radial-gradient(circle at 68% 30%,#30486b 0%,#172944 42%,#0c172a 100%);display:grid;place-items:center;box-shadow:0 24px 60px #101d3626}
+.hero-sun{width:150px;height:150px;border-radius:50%;position:absolute;right:18%;top:18%;background:linear-gradient(135deg,#f1d9a2,#b88b48);box-shadow:0 0 0 24px #d8b77910,0 0 75px #d8b77935}
+.hero-line{position:absolute;width:135%;height:62%;border:1px solid #d8b7798a;border-radius:50%;transform:rotate(-27deg)}
+.hero-art-label{position:absolute;left:25px;bottom:24px;font-size:10px;letter-spacing:.22em;color:#d8dfeb}
+.hero-art-mark{position:relative;z-index:1;font:800 clamp(66px,8vw,100px)/1 Manrope;letter-spacing:-.13em;color:#f4e4bf;text-shadow:0 10px 30px #0003}
+.hero-art-mark span{color:white;font-size:.65em;vertical-align:top}
+.brothers-section{padding:72px 0 80px}
+.brothers-section .section-heading h2{max-width:560px}
+.brother-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.brother-card{position:relative;min-width:0;min-height:365px;padding:27px;border:1px solid #e4e6e9;border-radius:24px;background:linear-gradient(145deg,#fff 0%,#faf9f5 100%);display:flex;flex-direction:column;align-items:flex-start;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.brother-card:hover{transform:translateY(-5px);box-shadow:0 20px 48px #101d3614;border-color:#d6c39e}
+.brother-card-top{width:100%;display:flex;justify-content:space-between;align-items:center}
+.brother-number{font-size:10px;letter-spacing:.15em;font-weight:700;color:#858d9a}
+.round-arrow{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;border:1px solid #e0e3e8;color:var(--navy);font-size:16px}
+.brother-avatar{width:68px;height:68px;border-radius:21px;display:grid;place-items:center;margin:24px 0 19px;font:800 25px Manrope;letter-spacing:-.08em;box-shadow:0 8px 20px #101d3610}
+.om-avatar{background:linear-gradient(145deg,#172b49,#0d182b);color:#e6c98c}
+.krishna-avatar{background:linear-gradient(145deg,#f0dfb9,#c6a56b);color:#17233a}
+.brother-avatar span{font-size:15px;vertical-align:top}
+.brother-card .eyebrow{margin-bottom:8px}
+.brother-card h3{font:800 27px Manrope;color:var(--navy);margin:0 0 8px;letter-spacing:-.035em}
+.brother-description{font-size:13px;line-height:1.8;color:#697386;max-width:430px;margin:0 0 23px}
+.brother-cta{width:100%;display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:15px;border-top:1px solid #e9ebee;font-size:12px;font-weight:700;color:var(--navy)}
+.brother-cta span{font-size:18px;transition:transform .18s ease}
+.brother-card:hover .brother-cta span{transform:translateX(4px)}
+.group-values{padding:38px 0;background:#f5f2ea;border-top:1px solid #eeebe3}
+.values-inner{display:grid;grid-template-columns:1fr .8fr;gap:45px;align-items:center}
+.values-inner h2{font:700 clamp(24px,3vw,34px)/1.25 Manrope;color:var(--navy);margin:0;max-width:500px}
+.values-inner>p{font-size:13px;line-height:1.9;color:#687386;margin:0}
+.site-footer{padding-top:32px}
+.button,.filter-chip,.nav-cta{transition:transform .18s ease,background .18s ease,border-color .18s ease}
+.button:hover{transform:translateY(-1px)}
+@media(max-width:760px){
+ .group-hero-inner{grid-template-columns:1fr;gap:28px;padding-top:44px;padding-bottom:48px}
+ .group-hero-art{min-height:245px}
+ .group-hero-copy h1{font-size:clamp(40px,10vw,57px)}
+ .brothers-section{padding:50px 0 56px}
+ .brother-grid{grid-template-columns:1fr}
+ .brother-card{min-height:320px}
+ .values-inner{grid-template-columns:1fr;gap:12px}
+ .primary-nav{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
