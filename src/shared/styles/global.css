@@ -69,3 +69,5 @@
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
 }
+
+.preview-refresh-tag{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;margin:0 0 16px;border:1px solid #d7c49d;border-radius:99px;background:#fff9eb;color:#735b30;font-size:10px;font-weight:800;letter-spacing:.13em}.preview-refresh-tag:before{content:"";width:7px;height:7px;border-radius:50%;background:#b58b42;box-shadow:0 0 0 3px #b58b421c}
