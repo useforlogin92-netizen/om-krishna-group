@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - feature/website-v2
+      - feature/family-private-chat-visitor-live-chat
   pull_request:
     branches:
       - main
