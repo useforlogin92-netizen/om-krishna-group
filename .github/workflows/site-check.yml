@@ -5,9 +5,11 @@ on:
     branches:
       - main
       - feature/website-v2
+      - feature/devotional-hero-vfx
   pull_request:
     branches:
       - main
+      - feature/website-v2
 
 permissions:
   contents: read
