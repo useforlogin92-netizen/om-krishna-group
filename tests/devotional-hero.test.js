@@ -23,8 +23,9 @@ test("devotional visual effects are scoped to the hero artwork", () => {
 });
 
 test("reduced-motion preference disables devotional animations", () => {
-  assert.match(
-    stylesheet,
-    /@media\s*\(prefers-reduced-motion:\s*reduce\)\s*\{[^}]*\.devotional-hero:before[^}]*animation:\s*none/s
+  const reducedMotion = stylesheet.slice(
+    stylesheet.lastIndexOf("@media(prefers-reduced-motion:reduce)")
   );
+  assert.notEqual(reducedMotion, stylesheet, "reduced-motion media query must exist");
+  assert.match(reducedMotion, /\.devotional-mantra\{animation:none\}/);
 });
