@@ -1,9 +1,13 @@
-import test from "node:test";
-import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+const test = require("node:test");
+const assert = require("node:assert/strict");
+const { readFileSync } = require("node:fs");
+const { join } = require("node:path");
 
-const homepage = await readFile(new URL("../index.html", import.meta.url), "utf8");
-const stylesheet = await readFile(new URL("../src/shared/styles/global.css", import.meta.url), "utf8");
+const homepage = readFileSync(join(__dirname, "..", "index.html"), "utf8");
+const stylesheet = readFileSync(
+  join(__dirname, "..", "src", "shared", "styles", "global.css"),
+  "utf8"
+);
 
 test("homepage contains the devotional hero preview and clearly labels pending media", () => {
   assert.match(homepage, /class="hero-art devotional-hero"/);
